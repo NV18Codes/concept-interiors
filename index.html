@@ -1372,139 +1372,145 @@
   
   <!-- Hidden Popup Modal -->
   <div id="contact-popup" class="contact-popup">
-      <div class="popup-content">
-          <span class="close-btn" onclick="closePopup()">×</span>
-          <h2>Contact Us</h2>
-          <div class="contact-form">
-            <!-- <section class="contact-info-area"> -->
-              <div class="container">
-                  <div class="row">
-                      <div class="col-xl-12 col-lg-7 col-md-12 col-sm-12">
-                          <div class="contact-form">
-                             
-                              <div class="inner-box">
-                                  <form id="contact-form" name="contact_form" class="default-form" action="http://st.ourhtmldemo.com/new/Crystalo/inc/sendmail.php" method="post">
-                                      <div class="row">
-                                          <div class="col-md-12">
-                                              <div class="input-box">
-                                                  <input type="text" name="form_name" value="" placeholder="Name" required="">
-                                                  <div class="icon">
-                                                      <i class="fa fa-user" aria-hidden="true"></i>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="row">
-                                          <div class="col-md-6">
-                                              <div class="input-box">
-                                                  <select class="selectmenu">
-                                                      <option selected="selected">Enquire About</option>
-                                                      <option>Concept Designs</option>
-                                                      <option>Furniture Design</option>
-                                                      <option>Make-Over Design</option>
-                                                      <option>Space Planning</option>
-                                                      <option>Consulting</option>
-                                                  </select>
-                                                  <div class="icon">
-                                                      <i class="fa fa-question" aria-hidden="true"></i>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-md-6">
-                                              <div class="input-box">
-                                                  <input type="text" name="form_phone" value="" placeholder="Phone">
-                                                  <div class="icon">
-                                                      <i class="fa fa-phone" aria-hidden="true"></i>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="row">
-                                          <div class="col-md-12">
-                                              <div class="input-box">
-                                                  <input type="email" name="form_email" value="" placeholder="Email Address" required="">
-                                                  <div class="icon">
-                                                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="row">
-                                          <div class="col-md-12">
-                                              <div class="input-box">
-                                                  <textarea name="form_message" placeholder="Your Message..." required=""></textarea>
-                                                  <div class="icon envelop">
-                                                      <i class="fa fa-comment" aria-hidden="true"></i>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="row">
-                                          <div class="col-md-12">
-                                              <div class="button-box">
-                                                  <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
-                                                  <button class="btn-one" type="submit" data-loading-text="Please wait...">Send Your Message<span class="flaticon-next"></span></button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </form>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          <!-- </section> -->
-          </div>
-      </div>
-  </div>
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">×</span>
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form id="contact-form" name="contact_form" class="default-form" action="http://st.ourhtmldemo.com/new/Crystalo/inc/sendmail.php" method="post">
+                <div class="input-box">
+                    <input type="text" name="form_name" placeholder="Name" required="">
+                    <div class="icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                </div>
+                <div class="input-box">
+                    <select class="selectmenu">
+                        <option selected>Enquire About</option>
+                        <option>Concept Designs</option>
+                        <option>Furniture Design</option>
+                        <option>Make-Over Design</option>
+                        <option>Space Planning</option>
+                        <option>Consulting</option>
+                    </select>
+                    <div class="icon"><i class="fa fa-question" aria-hidden="true"></i></div>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="form_phone" placeholder="Phone">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="form_email" placeholder="Email Address" required="">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                </div>
+                <div class="input-box">
+                    <textarea name="form_message" placeholder="Your Message..." required=""></textarea>
+                    <div class="icon"><i class="fa fa-comment" aria-hidden="true"></i></div>
+                </div>
+                <div class="button-box">
+                    <button class="btn-one" type="submit">Send Your Message <span class="flaticon-next"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 <style>
-  .contact-popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    /* max-width: 500px; */
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    z-index: 1000;
-}
+    /* Popup styling */
+    .contact-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 500px;
+        max-height: 90vh;
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        padding: 20px;
+        overflow-y: scroll;
+        z-index: 1000;
 
-.contact-popup .popup-content {
-    position: relative;
-}
+    }
 
-.contact-popup .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-}
+    .popup-content {
+        position: relative;
+    }
 
-.contact-popup .popup-content h2 {
-    text-align: center;
-}
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #888;
+    }
 
-.contact-popup .popup-content .contact-form {
-    margin-top: 20px;
-}
+    .popup-content h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-</style>  
+    /* Form and icon styling */
+    .contact-form .input-box {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form select,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px 40px 10px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .contact-form textarea {
+        height: 80px;
+        resize: none;
+    }
+
+    .contact-form .icon {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        color: #888;
+    }
+
+    /* Submit button */
+    .button-box {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .btn-one {
+        background-color: #e9212e;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btn-one:hover {
+        background-color: #e9212ec4;
+    }
+</style>
 
 <script>
-  // Function to show the popup after 20 seconds
-setTimeout(function() {
-    document.getElementById("contact-popup").style.display = "block";
-}, 20000);
+    // Show the popup after 30 seconds
+    setTimeout(function() {
+        document.getElementById("contact-popup").style.display = "block";
+    }, 3000);
 
-// Function to close the popup
-function closePopup() {
-    document.getElementById("contact-popup").style.display = "none";
-}
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById("contact-popup").style.display = "none";
+    }
+</script>
 
 </script>
     <!-- FORM POPUP END -->
