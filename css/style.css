@@ -1530,6 +1530,7 @@ select:focus {
     display: block;
     background: #f6f6f6;
     padding: 30px 0;
+    display: none !important;
 }
 
 .header-lower-style1 .inner-content {
