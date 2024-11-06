@@ -1377,7 +1377,7 @@
         <h2>Contact Us</h2>
         <div class="contact-form">
             <form id="contact-form" name="contact_form" class="default-form" action="http://st.ourhtmldemo.com/new/Crystalo/inc/sendmail.php" method="post">
-                <div class="input-box">
+                <div class="input-box d-flex align-items-center">
                     <input type="text" name="form_name" placeholder="Name" required="">
                     <div class="icon"><i class="fa fa-user" aria-hidden="true"></i></div>
                 </div>
@@ -1392,15 +1392,15 @@
                     </select>
                     <div class="icon"><i class="fa fa-question" aria-hidden="true"></i></div>
                 </div>
-                <div class="input-box">
+                <div class="input-box d-flex align-items-center">
                     <input type="text" name="form_phone" placeholder="Phone">
                     <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
                 </div>
-                <div class="input-box">
+                <div class="input-box d-flex align-items-center">
                     <input type="email" name="form_email" placeholder="Email Address" required="">
                     <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                 </div>
-                <div class="input-box">
+                <div class="input-box d-flex align-items-center">
                     <textarea name="form_message" placeholder="Your Message..." required=""></textarea>
                     <div class="icon"><i class="fa fa-comment" aria-hidden="true"></i></div>
                 </div>
@@ -1501,10 +1501,10 @@
 </style>
 
 <script>
-    // Show the popup after 30 seconds
+    // Show the popup after 20 seconds
     setTimeout(function() {
         document.getElementById("contact-popup").style.display = "block";
-    }, 3000);
+    }, 20000);
 
     // Function to close the popup
     function closePopup() {
